@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e19225a1bded5414fbb084c890c68b05
+timeCreated: 1496510542
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Courgette
+  fontNames:
+  - Courgette
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

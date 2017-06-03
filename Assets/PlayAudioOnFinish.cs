@@ -7,17 +7,15 @@ public class PlayAudioOnFinish : MonoBehaviour
 {
 
     private bool _played;
-    private AudioSource audio;
+
+    [HideInInspector][SerializeField]
+    private new AudioSource audio;
 
     public void Start()
     {
         audio = GetComponent<AudioSource>();
     }
 
-    //public void Update()
-    //{
-    //    _audio.Play();
-    //}
     public void Update()
     {
         if (!_played && GameManager.SettingsManager.IsLevelFinished)

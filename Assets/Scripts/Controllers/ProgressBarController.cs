@@ -14,7 +14,7 @@ public class ProgressBarController : MonoBehaviour
 
     [Range(0.0f, 1.0f)]
     public float Value;
-    private float _progressBarWidth;
+    //private float _progressBarWidth;
 
     private RectTransform _progressBarRectTransform;
 
@@ -25,7 +25,7 @@ public class ProgressBarController : MonoBehaviour
 
     public void Start()
     {
-        _progressBarWidth = _progressBarRectTransform.rect.width;
+        //_progressBarWidth = _progressBarRectTransform.rect.width;
         if (ClearOnStart)
             FillBar(0.0f);
     }
