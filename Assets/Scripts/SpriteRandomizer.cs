@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Sample : MonoBehaviour
+public class SpriteRandomizer : MonoBehaviour
 {
     private String _currentCategory;
 
