@@ -5,9 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [HideInInspector]
-    public static List<String> Category = new List<String>();
-
+   
     public static GameManager Instance;
     public static SettingsManager SettingsManager;
 
@@ -19,10 +17,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
 
         SettingsManager = GetComponent<SettingsManager>();
-            
-        Category.Add("Numbers");
-        Category.Add("Colors");
-        Category.Add("Animals");
 
         DontDestroyOnLoad(gameObject);
         InitGame();
