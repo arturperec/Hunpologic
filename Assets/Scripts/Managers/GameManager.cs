@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
         UIManager = regUIManager;
     }
 
-
     void InitGame()
     {
         //todo
