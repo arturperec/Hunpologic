@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SettingsManager))]
+
 public class GameManager : MonoBehaviour
 {
     [HideInInspector]
@@ -10,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
     public static SettingsManager SettingsManager;
+    public static UIManager UIManager;
 
     void Awake()
     {
@@ -19,6 +22,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
 
         SettingsManager = GetComponent<SettingsManager>();
+        UIManager = GetComponent<UIManager>();
             
         Category.Add("Numbers");
         Category.Add("Colors");
@@ -27,6 +31,12 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         InitGame();
     }
+
+    public static void RegisterPlaneUiManager(UIManager regUIManager)
+    {
+        UIManager = regUIManager;
+    }
+
 
     void InitGame()
     {

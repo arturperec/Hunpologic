@@ -12,14 +12,14 @@ public class LivesManager : MonoBehaviour
         _currentLives = GameManager.SettingsManager.LivesNumber;
     }
 
-    //public void TakeLife()
-    //{
-    //    if (IsGameOver())
-    //    {
-    //        _currentLives--;
-    //        GameManager.
-    //    }
-    //}
+    public void TakeLife()
+    {
+        if (IsGameOver())
+        {
+            _currentLives--;
+            //GameManager.UIManager.
+        }
+    }
 
     private bool IsGameOver()
     {
