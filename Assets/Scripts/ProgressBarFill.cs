@@ -5,30 +5,29 @@ using UnityEngine.UI;
 
 public class ProgressBarFill : MonoBehaviour
 {
-    private bool _isFinished;
-    public Image FillBarObject;
 
-    [Range(0.0f, 1.0f)]
-    public float Value;
+    public Image FillBarObject1;
+    public Image FillBarObject2;
 
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.B))
         {
-            if (Value <= 1 && _isFinished == false)
+            if (GameManager.SettingsManager.FillValue <= 1 && GameManager.SettingsManager.IsLevelFinished == false)
             {
                 Debug.Log("B Pressed");
-                Debug.Log("Value: " + Value);
-                Value += 0.17f;
-                SetFillAt(Value);
+                Debug.Log("Value: " + GameManager.SettingsManager.FillValue);
+                GameManager.SettingsManager.FillValue += 0.17f;
+                SetFillAt(GameManager.SettingsManager.FillValue);
+                if (GameManager.SettingsManager.FillValue >= 1)
+                {
+                    GameManager.SettingsManager.FillValue = 1;
+                    GameManager.SettingsManager.IsLevelFinished = true;
+                    Debug.Log("Gratulacje");
+                    SetFillAt(GameManager.SettingsManager.FillValue);
+                }
             }
-            else if (Value >= 1)
-            {
-                Value = 1;
-                _isFinished = true;
-                Debug.Log("Gratulacje, wygrałeś dziwko");
-                SetFillAt(Value);
-            }
+   
 
         }
     }
@@ -45,6 +44,7 @@ public class ProgressBarFill : MonoBehaviour
 
     private void SetFillAt(float value)
     {
-        FillBarObject.fillAmount = value;
+        FillBarObject1.fillAmount = value;
+        FillBarObject2.fillAmount = value;
     }
 }
