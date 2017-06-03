@@ -21,15 +21,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
 
         SettingsManager = GetComponent<SettingsManager>();
-<<<<<<< HEAD
         UIManager = GetComponent<UIManager>();
         ScenesManager = GetComponent<ScenesManager>();
-            
-        Category.Add("Numbers");
-        Category.Add("Colors");
-        Category.Add("Animals");
-=======
->>>>>>> f674368c7f951e10fe21ed26412e5097ba5e8758
 
         DontDestroyOnLoad(gameObject);
         Debug.Log(SettingsManager.GameSceneName);
