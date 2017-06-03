@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LivesManager : MonoBehaviour {
+public class LivesManager : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private int _currentLives;
+
+    public void Start()
+    {
+        _currentLives = HunpologicGameManager
+    }
 }
