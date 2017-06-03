@@ -55,13 +55,18 @@ public class SpriteRandomizer : MonoBehaviour
 
             if (texture.name.Equals(correctAnswer))
 	        {
-	            button.GetComponent<ButonController>().SetCorrect(true);
+	            button.GetComponent<ButtonController>().SetCorrect(true);
+	            Debug.Log(LogicManager.PlFirstWord);
+                Debug.Log(correctSplitAnswer);
+                Debug.Log(TranslationManager.Instance.GetText(correctSplitAnswer));
 
-	            Debug.Log(LogicManager.PlFirstWord + TranslationManager.Instance.GetText(correctSplitAnswer));
+
+
+                Debug.Log(LogicManager.PlFirstWord + TranslationManager.Instance.GetText(correctSplitAnswer));
 	        }
 	        else
 	        {
-                button.GetComponent<ButonController>().SetCorrect(false);
+                button.GetComponent<ButtonController>().SetCorrect(false);
             }
 
             button.GetComponent<Image>().sprite = texture;      

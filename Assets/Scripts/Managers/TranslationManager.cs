@@ -13,10 +13,6 @@ public enum Language : int
 public class TranslationManager : MonoBehaviour
 {
     public static TranslationManager Instance;
-    void Awake()
-    {
-        Instance = this;
-    }
 
     public Language CurrentLanguage;
 
@@ -24,11 +20,12 @@ public class TranslationManager : MonoBehaviour
 
     public Dictionary<string, string> Values = new Dictionary<string, string>();
 
-    void Start()
+    void Awake()
     {
+        Instance = this;
         //WriteString();
         string json = ReadString();
-
+        //Debug.Log(json);
         Translations translations = JsonUtility.FromJson<Translations>(json);
         ValidateTranslationValues(translations);
 
@@ -73,13 +70,13 @@ public class TranslationManager : MonoBehaviour
         return result;
     }
 
-    public void Init()
-    {
-        
-    }
-
     public string GetText(string key)
     {
+        if (!Values.ContainsKey(key))
+        {
+            Debug.LogWarning("Cannot find key: " + key);
+            return key;
+        }
         return Values[key];
     }
 }

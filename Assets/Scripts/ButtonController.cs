@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ButonController : MonoBehaviour
+public class ButtonController : MonoBehaviour
 {
     private bool _isCorrect = false;
 

@@ -11,37 +11,37 @@ public class ShortcutController : MonoBehaviour
         //Player 1
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Buttons[0].GetComponent<ButonController>().OnClick();
+            Buttons[0].GetComponent<ButtonController>().OnClick();
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Buttons[1].GetComponent<ButonController>().OnClick();
+            Buttons[1].GetComponent<ButtonController>().OnClick();
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            Buttons[2].GetComponent<ButonController>().OnClick();
+            Buttons[2].GetComponent<ButtonController>().OnClick();
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            Buttons[3].GetComponent<ButonController>().OnClick();
+            Buttons[3].GetComponent<ButtonController>().OnClick();
         }
 
         //Player 2
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
-            Buttons[4].GetComponent<ButonController>().OnClick();
+            Buttons[4].GetComponent<ButtonController>().OnClick();
         }
         if (Input.GetKeyDown(KeyCode.Alpha8))
         {
-            Buttons[5].GetComponent<ButonController>().OnClick();
+            Buttons[5].GetComponent<ButtonController>().OnClick();
         }
         if (Input.GetKeyDown(KeyCode.Alpha9))
         {
-            Buttons[6].GetComponent<ButonController>().OnClick();
+            Buttons[6].GetComponent<ButtonController>().OnClick();
         }
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            Buttons[7].GetComponent<ButonController>().OnClick();
+            Buttons[7].GetComponent<ButtonController>().OnClick();
         }
 
     }
