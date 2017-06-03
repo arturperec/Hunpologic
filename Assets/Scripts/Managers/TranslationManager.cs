@@ -28,7 +28,7 @@ public class TranslationManager : MonoBehaviour
     {
         //WriteString();
         string json = ReadString();
-        Debug.Log(json);
+
         Translations translations = JsonUtility.FromJson<Translations>(json);
         ValidateTranslationValues(translations);
 

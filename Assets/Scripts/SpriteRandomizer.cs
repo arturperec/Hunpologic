@@ -16,8 +16,9 @@ public class SpriteRandomizer : MonoBehaviour
     void Start ()
 	{
         int randomNumber = UnityEngine.Random.Range(0, LogicManager.Category.Count);
-        Debug.Log(randomNumber);
+        Debug.Log("Random number" + randomNumber);
         _currentCategory = LogicManager.Category.ElementAt(randomNumber);
+        Debug.Log("Category" + _currentCategory);
 
 	    Stack<Sprite> textures = new Stack<Sprite>();
 
@@ -28,28 +29,41 @@ public class SpriteRandomizer : MonoBehaviour
 
         Shuffle(textures);
 	    Sprite correctSprite = textures.Pop();
-        textures.Push(correctSprite);
+        //textures.Push(correctSprite);
+        Stack<Sprite> shuffled = new Stack<Sprite>();
+        shuffled.Push(correctSprite);
+        shuffled.Push(textures.Pop());
+        shuffled.Push(textures.Pop());
+        shuffled.Push(textures.Pop());
+        Shuffle(shuffled);
+
         String correctAnswer = correctSprite.name;
         string[] tokens = correctAnswer.Split('-');
-	    correctAnswer = tokens[1];
+        Debug.Log("Tokkens" + tokens[0] + tokens[1]);
+   
+        String correctSplitAnswer = tokens[1];
 
-        Shuffle(textures);
-        
+        //Shuffle(textures);
+        Debug.Log("CorrectAnswer" + correctAnswer);
+        Debug.Log("Split" + correctSplitAnswer);
 
         for (int i = 0; i < 4; i++)
 	    {       
-            Sprite texture = textures.Pop();
+            Sprite texture = shuffled.Pop();
+            Debug.Log(texture.name);
 	        GameObject button = GameObject.Find("Button" + (i + 1));
 
             if (texture.name.Equals(correctAnswer))
 	        {
 	            button.GetComponent<ButonController>().SetCorrect(true);
-                Debug.Log(LogicManager.PlFirstWord + LogicManager.Text[Int32.Parse(correctAnswer), 0]);
-            }
+
+	            Debug.Log(LogicManager.PlFirstWord + TranslationManager.Instance.GetText(correctSplitAnswer));
+	        }
 	        else
 	        {
                 button.GetComponent<ButonController>().SetCorrect(false);
             }
+
             button.GetComponent<Image>().sprite = texture;      
        }
 	}

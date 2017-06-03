@@ -11,7 +11,7 @@ public class TranslationText : MonoBehaviour
 
     public void Init()
     {
-        Debug.Log("Translation: " + TranslationManager.Instance.GetText(Key));
+       // Debug.Log("Translation: " + TranslationManager.Instance.GetText(Key));
     }
 
 }
