@@ -26,12 +26,28 @@ public class SpriteRandomizer : MonoBehaviour
             textures.Push(sprite);
 	    }
 
+        Shuffle(textures);
+	    Sprite correctSprite = textures.Pop();
+        textures.Push(correctSprite);
+	    String correctAnswer = correctSprite.name;
+        Shuffle(textures);
+        
 
         for (int i = 0; i < 4; i++)
-	    {
-            Shuffle(textures);
-	        Sprite texture = textures.Pop();
-            GameObject.Find("Button" + (i+1)).GetComponent<Image>().sprite = texture;      
+	    {       
+            Sprite texture = textures.Pop();
+	        GameObject button = GameObject.Find("Button" + (i + 1));
+
+            if (texture.name.Equals(correctAnswer))
+	        {
+	            button.GetComponent<ButonController>().SetCorrect(true);
+                Debug.Log(LogicManager.PlFirstWord + LogicManager.Text[Int32.Parse(correctAnswer), 0]);
+            }
+	        else
+	        {
+                button.GetComponent<ButonController>().SetCorrect(false);
+            }
+            button.GetComponent<Image>().sprite = texture;      
         }
  
 	}
