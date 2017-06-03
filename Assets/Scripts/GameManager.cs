@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         ScenesManager = GetComponent<ScenesManager>();
 
         DontDestroyOnLoad(gameObject);
-        Debug.Log(SettingsManager.GameSceneName);
+        //Debug.Log(SettingsManager.GameSceneName);
         InitGame();
     }
 

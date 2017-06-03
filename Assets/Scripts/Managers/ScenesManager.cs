@@ -9,7 +9,7 @@ public class ScenesManager : MonoBehaviour {
     {
         //SceneManager.LoadScene(GameManager.SettingsManager.GameSceneName);
         //Debug.Log(GameManager.SettingsManager.GameSceneName);
-        SceneManager.LoadScene(GameManager.SettingsManager.GameSceneName);
+        SceneManager.LoadScene("scn_Game");
     }
 
     public void RestartGame()
