@@ -38,14 +38,14 @@
 	  {  
          "Key":"5",
          "Values":[  
-            "cyfre - PIEC.",
+            "cyfre - PIĘĆ.",
             "számot - ÖT."
          ]
       },
 	  {  
          "Key":"6",
          "Values":[  
-            "cyfre - SZESC.",
+            "cyfre - SZEŚĆ.",
             "számot - HAT."
          ]
       },
@@ -66,57 +66,113 @@
 	  {  
          "Key":"9",
          "Values":[  
-            "cyfre - DZIEWIEC.",
+            "cyfre - DZIEWIĘĆ.",
             "számot - KILENC."
          ]
       },
 	  {  
          "Key":"10",
          "Values":[  
-            "zwierze - KROLIK.",
-            "szín - NYÚL."
+            "zwierze - KRÓLIK.",
+            "állat - NYÚL."
          ]
       },
 	  {  
          "Key":"11",
          "Values":[  
             "zwierze - KOT.",
-            "szín - CICA."
+            "állat - CICA."
          ]
       },
 	  {  
          "Key":"12",
          "Values":[  
             "zwierze - KROWA.",
-            "szín - TEHÉN."
+            "állat - TEHÉN."
          ]
       },
 	  {  
          "Key":"13",
          "Values":[  
             "zwierze - PIES.",
-            "szín - KUTYA."
+            "állat - KUTYA."
          ]
       },
 	  {  
          "Key":"14",
          "Values":[  
-            "zwierze - KON.",
-            "szín - LÓ."
+            "zwierze - KOŃ.",
+            "állat - LÓ."
          ]
       },
 	  {  
          "Key":"15",
          "Values":[  
             "zwierze - MYSZ.",
-            "szín - EGÉR."
+            "állat - EGÉR."
          ]
       },
 	  {  
          "Key":"16",
          "Values":[  
-            "zwierze - SWINIA.",
-            "szín - MALAC."
+            "zwierze - ŚWINIA.",
+            "állat - MALAC."
+         ]
+      },
+	  {  
+         "Key":"17",
+         "Values":[  
+            "kolor - NIEBIESKI.",
+            "szín - KÉK."
+         ]
+      },
+	  {  
+         "Key":"18",
+         "Values":[  
+            "kolor - ZIELONY.",
+            "szín - ZÖLD."
+         ]
+      },
+	  {  
+         "Key":"19",
+         "Values":[  
+            "kolor - POMARAŃCZOWY.",
+            "szín - NARANCS."
+         ]
+      },
+	  {  
+         "Key":"20",
+         "Values":[  
+            "kolor - RÓŻOWY.",
+            "szín - RÓZSASZÍN."
+         ]
+      },
+	  {  
+         "Key":"21",
+         "Values":[  
+            "kolor - FIOLETOWY.",
+            "szín - LILA."
+         ]
+      },
+	  {  
+         "Key":"22",
+         "Values":[  
+            "kolor - CZERWONY.",
+            "szín - EGÉR."
+         ]
+      },
+	  {  
+         "Key":"23",
+         "Values":[  
+            "kolor - BIAŁY.",
+            "szín - FEHÉR."
+         ]
+      },
+	  {  
+         "Key":"24",
+         "Values":[  
+            "kolor - ŻÓŁTY.",
+            "szín - SÁRGA."
          ]
       }
    ]
