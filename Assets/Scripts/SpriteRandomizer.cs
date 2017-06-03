@@ -7,15 +7,17 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Sample : MonoBehaviour
+public class SpriteRandomizer : MonoBehaviour
 {
     private String _currentCategory;
+    
+    
 
     void Start ()
 	{
-        int randomNumber = UnityEngine.Random.Range(0, GameManager.Category.Count);
+      /*  int randomNumber = UnityEngine.Random.Range(0, GameManager.Category.Count);
         _currentCategory = GameManager.Category.ElementAt(randomNumber);
-
+*/
 
 	    Stack<Sprite> textures = new Stack<Sprite>();
 
