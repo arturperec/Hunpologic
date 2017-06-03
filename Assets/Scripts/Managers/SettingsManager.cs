@@ -9,7 +9,7 @@ public class SettingsManager : MonoBehaviour
     //public int Probability;
     //public float ProbabilityDenominator;
     public int LivesNumber = 5;
-    public int MovesToFinishLevel = 6;
+    public float MovesToFinishLevel = 6f;
     [Range(0.0f, 1.0f)]
     public float FillValue;
 
