@@ -8,7 +8,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector]
     public static List<String> Category = new List<String>();
 
-    public static GameManager Instance = null;
+    public static GameManager Instance;
+    public static SettingsManager SettingsManager;
 
     void Awake()
     {
@@ -16,6 +17,8 @@ public class GameManager : MonoBehaviour
             Instance = this;
         else if (Instance != this)
             Destroy(gameObject);
+
+        SettingsManager = GetComponent<SettingsManager>();
             
         Category.Add("Numbers");
         Category.Add("Colors");
