@@ -16,6 +16,4 @@ public class ScenesManager : MonoBehaviour {
     {
         SceneManager.LoadScene(GameManager.SettingsManager.MainMenuSceneName);
     }
-
-    
 }
