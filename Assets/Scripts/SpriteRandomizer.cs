@@ -15,9 +15,9 @@ public class SpriteRandomizer : MonoBehaviour
 
     void Start ()
 	{
-      /*  int randomNumber = UnityEngine.Random.Range(0, GameManager.Category.Count);
-        _currentCategory = GameManager.Category.ElementAt(randomNumber);
-*/
+        int randomNumber = UnityEngine.Random.Range(0, LogicManager.Category.Count);
+        Debug.Log(randomNumber);
+        _currentCategory = LogicManager.Category.ElementAt(randomNumber);
 
 	    Stack<Sprite> textures = new Stack<Sprite>();
 
