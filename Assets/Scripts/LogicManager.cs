@@ -8,12 +8,6 @@ public class LogicManager : MonoBehaviour {
     [HideInInspector]
     public static List<String> Category = new List<String>();       
 
-    [HideInInspector]
-    public static String PlFirstWord = "Wybierz ";
-
-    [HideInInspector]
-    public static String HunFirstWord = "Válasszon ";
-
     public static LogicManager Instance;
 
     void Awake()

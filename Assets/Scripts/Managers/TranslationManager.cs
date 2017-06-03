@@ -14,11 +14,12 @@ public class TranslationManager : MonoBehaviour
 {
     public static TranslationManager Instance;
 
-    public Language CurrentLanguage;
+    
+    //public Language CurrentLanguage;
 
     readonly string path = "Assets/Resources/translations.txt";
 
-    public Dictionary<string, string> Values = new Dictionary<string, string>();
+    public Dictionary<Language, Dictionary<string, string>> Values = new Dictionary<Language, Dictionary<string, string>>();
 
     void Awake()
     {
@@ -37,11 +38,16 @@ public class TranslationManager : MonoBehaviour
 
     void ValidateTranslationValues(Translations translations)
     {
-        int languageID = (int)CurrentLanguage;
-        Values = new Dictionary<string, string>();
+        Values = new Dictionary<Language, Dictionary<string, string>>();
+        Values.Add(Language.PL, new Dictionary<string, string>());
         foreach (var item in translations.Values)
         {
-            Values.Add(item.Key, item.Values[languageID]);
+            Values[Language.PL].Add(item.Key, item.Values[(int)Language.PL]);
+        }
+        Values.Add(Language.HU, new Dictionary<string, string>());
+        foreach (var item in translations.Values)
+        {
+            Values[Language.HU].Add(item.Key, item.Values[(int)Language.HU]);
         }
     }
 
@@ -70,14 +76,19 @@ public class TranslationManager : MonoBehaviour
         return result;
     }
 
-    public string GetText(string key)
+    public string GetText(Language lang, string key)
     {
-        if (!Values.ContainsKey(key))
+        if (!Values.ContainsKey(lang))
         {
-            Debug.LogWarning("Cannot find key: " + key);
+            Debug.LogWarning("Cannot find language: " + lang);
             return key;
         }
-        return Values[key];
+        if (!Values[lang].ContainsKey(key))
+        {
+            Debug.LogWarning("Cannot find translation: " + key);
+            return key;
+        }
+        return Values[lang][key];
     }
 }
 
