@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public static SettingsManager SettingsManager;
     public static UIManager UIManager;
     public static ScenesManager ScenesManager;
+    public static LogicManager LogicManager;
 
     void Awake()
     {
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour
         SettingsManager = GetComponent<SettingsManager>();
         UIManager = GetComponent<UIManager>();
         ScenesManager = GetComponent<ScenesManager>();
+        LogicManager = GetComponent<LogicManager>();
 
         DontDestroyOnLoad(gameObject);
         //Debug.Log(SettingsManager.GameSceneName);
