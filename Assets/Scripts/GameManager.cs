@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public static SettingsManager SettingsManager;
     public static UIManager UIManager;
+    public static ScenesManager ScenesManager;
 
     void Awake()
     {
@@ -23,12 +24,14 @@ public class GameManager : MonoBehaviour
 
         SettingsManager = GetComponent<SettingsManager>();
         UIManager = GetComponent<UIManager>();
+        ScenesManager = GetComponent<ScenesManager>();
             
         Category.Add("Numbers");
         Category.Add("Colors");
         Category.Add("Animals");
 
         DontDestroyOnLoad(gameObject);
+        Debug.Log(SettingsManager.GameSceneName);
         InitGame();
     }
 
