@@ -1,0 +1,123 @@
+{  
+   "Values":[  
+      {  
+         "Key":"0",
+         "Values":[  
+            "cyfre - ZERO.",
+            "számot - NULLA."
+         ]
+      },
+      {  
+         "Key":"1",
+         "Values":[  
+            "cyfre - JEDEN.",
+            "számot - EGY.,"
+         ]
+      },
+      {  
+         "Key":"2",
+         "Values":[  
+            "cyfre - DWA.",
+            "számot - KETTŐ."
+         ]
+      },
+      {  
+         "Key":"3",
+         "Values":[  
+            "cyfre - TRZY.",
+            "számot - HÁROM."
+         ]
+      },
+	  {  
+         "Key":"4",
+         "Values":[  
+            "cyfre - CZTERY.",
+            "számot - NÉGY."
+         ]
+      },
+	  {  
+         "Key":"5",
+         "Values":[  
+            "cyfre - PIEC.",
+            "számot - ÖT."
+         ]
+      },
+	  {  
+         "Key":"6",
+         "Values":[  
+            "cyfre - SZESC.",
+            "számot - HAT."
+         ]
+      },
+	  {  
+         "Key":"7",
+         "Values":[  
+            "cyfre - SIEDEM.",
+            "számot - HÉT."
+         ]
+      },
+	  {  
+         "Key":"8",
+         "Values":[  
+            "cyfre - OSIEM.",
+            "számot - NYLOC."
+         ]
+      },
+	  {  
+         "Key":"9",
+         "Values":[  
+            "cyfre - DZIEWIEC.",
+            "számot - KILENC."
+         ]
+      },
+	  {  
+         "Key":"10",
+         "Values":[  
+            "zwierze - KROLIK.",
+            "szín - NYÚL."
+         ]
+      },
+	  {  
+         "Key":"11",
+         "Values":[  
+            "zwierze - KOT.",
+            "szín - CICA."
+         ]
+      },
+	  {  
+         "Key":"12",
+         "Values":[  
+            "zwierze - KROWA.",
+            "szín - TEHÉN."
+         ]
+      },
+	  {  
+         "Key":"13",
+         "Values":[  
+            "zwierze - PIES.",
+            "szín - KUTYA."
+         ]
+      },
+	  {  
+         "Key":"14",
+         "Values":[  
+            "zwierze - KON.",
+            "szín - LÓ."
+         ]
+      },
+	  {  
+         "Key":"15",
+         "Values":[  
+            "zwierze - MYSZ.",
+            "szín - EGÉR."
+         ]
+      },
+	  {  
+         "Key":"16",
+         "Values":[  
+            "zwierze - SWINIA.",
+            "szín - MALAC."
+         ]
+      }
+   ]
+}

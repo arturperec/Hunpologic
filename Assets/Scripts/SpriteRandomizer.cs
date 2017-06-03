@@ -29,7 +29,10 @@ public class SpriteRandomizer : MonoBehaviour
         Shuffle(textures);
 	    Sprite correctSprite = textures.Pop();
         textures.Push(correctSprite);
-	    String correctAnswer = correctSprite.name;
+        String correctAnswer = correctSprite.name;
+        string[] tokens = correctAnswer.Split('-');
+	    correctAnswer = tokens[1];
+
         Shuffle(textures);
         
 
@@ -48,8 +51,7 @@ public class SpriteRandomizer : MonoBehaviour
                 button.GetComponent<ButonController>().SetCorrect(false);
             }
             button.GetComponent<Image>().sprite = texture;      
-        }
- 
+       }
 	}
 	
 
