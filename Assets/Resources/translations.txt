@@ -60,7 +60,7 @@
          "Key":"8",
          "Values":[  
             "cyfrę - OSIEM.",
-            "számot - NYLOC."
+            "számot - NYOLC."
          ]
       },
 	  {  
