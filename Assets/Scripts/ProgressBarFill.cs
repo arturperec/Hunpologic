@@ -39,6 +39,9 @@ public class ProgressBarFill : MonoBehaviour
             pushOrNot = false;
         }
         //if (GameManager.SettingsManager.FillValue <= 1 && GameManager.SettingsManager.IsLevelFinished == false)
+
+        if (GameManager.SettingsManager.FillValue >= 0)
+            GameManager.SettingsManager.FillValue -= 1 / 100 * Time.deltaTime;
     }
 
 

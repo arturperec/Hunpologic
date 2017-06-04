@@ -20,6 +20,7 @@ public class GameRestartController : MonoBehaviour
 
 
     void Update () {
+
 	    if (PlayerOneAnswerState == true && PlayerTwoAnswerState == true)
 	    {
 
