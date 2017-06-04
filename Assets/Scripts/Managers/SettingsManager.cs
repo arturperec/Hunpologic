@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class SettingsManager : MonoBehaviour
 {
-
+    [HideInInspector]
     public bool IsLevelFinished = false;
+    [HideInInspector]
+    public bool IsLevelFailed = false;
+
     //public int Probability;
     //public float ProbabilityDenominator;
     public int LivesNumber = 5;

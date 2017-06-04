@@ -9,7 +9,6 @@ public class GameRestartController : MonoBehaviour
 
     public SpriteRandomizer SpriteRandomizer;
     public ShortcutController ShortcutController;
-    public ButtonController ButtonController;
     public LivesController LivesController;
 
 
@@ -23,8 +22,16 @@ public class GameRestartController : MonoBehaviour
             SpriteRandomizer.Draw();
             SetPlayerOneAnswerState(false);
 	        SetPlayerTwoAnswerState(false);
-           /* LivesController.ResetLives();*/
 	    }
+
+        if (GameManager.SettingsManager.IsLevelFailed)
+        {
+            //todo load gameover scene
+        }
+        else if (GameManager.SettingsManager.IsLevelFinished)
+        {
+            //todo load congrat scene
+        }
 	}
 
 

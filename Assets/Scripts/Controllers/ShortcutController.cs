@@ -57,7 +57,7 @@ public class ShortcutController : MonoBehaviour
 
 
         //Player 2
-        if (Input.GetKeyDown(KeyCode.Alpha7) && !GameRestartController.GetPlayerTwoAnswerState())
+        if (Input.GetKeyDown(KeyCode.Alpha6) && !GameRestartController.GetPlayerTwoAnswerState())
         {
             GameRestartController.SetPlayerTwoAnswerState(true);
             Buttons[4].GetComponent<ButtonController>().OnClick();
@@ -67,7 +67,7 @@ public class ShortcutController : MonoBehaviour
                 Buttons[i].GetComponentInChildren<ParticleSystem>().Stop();
             }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha8) && !GameRestartController.GetPlayerTwoAnswerState())
+        if (Input.GetKeyDown(KeyCode.Alpha7) && !GameRestartController.GetPlayerTwoAnswerState())
         {
             GameRestartController.SetPlayerTwoAnswerState(true);
             Buttons[5].GetComponent<ButtonController>().OnClick();
@@ -78,7 +78,7 @@ public class ShortcutController : MonoBehaviour
                 Buttons[i].GetComponentInChildren<ParticleSystem>().Stop();
             }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha9) && !GameRestartController.GetPlayerTwoAnswerState())
+        if (Input.GetKeyDown(KeyCode.Alpha8) && !GameRestartController.GetPlayerTwoAnswerState())
         {
             GameRestartController.SetPlayerTwoAnswerState(true);
             Buttons[6].GetComponent<ButtonController>().OnClick();
@@ -89,7 +89,7 @@ public class ShortcutController : MonoBehaviour
                 Buttons[i].GetComponentInChildren<ParticleSystem>().Stop();
             }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha0) && !GameRestartController.GetPlayerTwoAnswerState())
+        if (Input.GetKeyDown(KeyCode.Alpha9) && !GameRestartController.GetPlayerTwoAnswerState())
         {
             GameRestartController.SetPlayerTwoAnswerState(true);
             Buttons[7].GetComponent<ButtonController>().OnClick();

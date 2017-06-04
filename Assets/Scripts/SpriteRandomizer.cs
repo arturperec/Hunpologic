@@ -13,8 +13,8 @@ public class SpriteRandomizer : MonoBehaviour
 
     public void Draw()
     {
-        DrawImages(Language.PL, 0, "Wybierz ", "InstructionsPlayer1");
-        DrawImages(Language.HU, 4, "Válaszd ", "InstructionsPlayer2");
+        DrawImages(Language.PL, 0, "Wybierz ", "InstructionsPlayer2");
+        DrawImages(Language.HU, 4, "Válaszd ", "InstructionsPlayer1");
     }
 
     public static void Shuffle<T>(Stack<T> stack)

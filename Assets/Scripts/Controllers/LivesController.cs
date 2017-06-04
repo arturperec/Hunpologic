@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LivesController : MonoBehaviour
-{
+{ 
 
-    public GameObject LifeOn;
-    public GameObject LifeOff;
+    public Sprite Off;
+    public Sprite On;
 
     [HideInInspector]
     public int _livesLeft;
@@ -19,30 +20,27 @@ public class LivesController : MonoBehaviour
         _livesLeft = 5;
     }
 
-   /* public void ResetLives()
+    public void ResetLives()
     {
         _livesLeft = 5;
         for (int i = 0; i < _livesLeft; i++)
         {
-            
+            LightBulbs[i].GetComponent<Image>().sprite = On;
         }
-    }*/
+    }
 
     public void WrongAnswer()
     {
-        LightBulbs[_livesLeft - 1].GetComponent<LivesController>().SetValue(false);
-    }
-
-    public void SetValue(bool value)
-    {
-        LifeOn.SetActive(value);
-        if (!GameManager.SettingsManager.IsLevelFinished && value == false)
+        if (_livesLeft != 0)
         {
-            SetValue(false);
-            Particles[_livesLeft-1].Play();
+            LightBulbs[_livesLeft - 1].GetComponent<Image>().sprite = Off;       
+            Particles[_livesLeft - 1].Play();
             _livesLeft--;
         }
-        LifeOff.SetActive(!value);
+        else
+        {
+            GameManager.SettingsManager.IsLevelFailed = true;
+        }
     }
-    
+  
 }

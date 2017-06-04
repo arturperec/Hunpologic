@@ -3,70 +3,70 @@
       {  
          "Key":"0",
          "Values":[  
-            "cyfre - ZERO.",
+            "cyfrę - ZERO.",
             "számot - NULLA."
          ]
       },
       {  
          "Key":"1",
          "Values":[  
-            "cyfre - JEDEN.",
+            "cyfrę - JEDEN.",
             "számot - EGY.,"
          ]
       },
       {  
          "Key":"2",
          "Values":[  
-            "cyfre - DWA.",
+            "cyfrę - DWA.",
             "számot - KETTŐ."
          ]
       },
       {  
          "Key":"3",
          "Values":[  
-            "cyfre - TRZY.",
+            "cyfrę - TRZY.",
             "számot - HÁROM."
          ]
       },
 	  {  
          "Key":"4",
          "Values":[  
-            "cyfre - CZTERY.",
+            "cyfrę - CZTERY.",
             "számot - NÉGY."
          ]
       },
 	  {  
          "Key":"5",
          "Values":[  
-            "cyfre - PIĘĆ.",
+            "cyfrę - PIĘĆ.",
             "számot - ÖT."
          ]
       },
 	  {  
          "Key":"6",
          "Values":[  
-            "cyfre - SZEŚĆ.",
+            "cyfrę - SZEŚĆ.",
             "számot - HAT."
          ]
       },
 	  {  
          "Key":"7",
          "Values":[  
-            "cyfre - SIEDEM.",
+            "cyfrę - SIEDEM.",
             "számot - HÉT."
          ]
       },
 	  {  
          "Key":"8",
          "Values":[  
-            "cyfre - OSIEM.",
+            "cyfrę - OSIEM.",
             "számot - NYLOC."
          ]
       },
 	  {  
          "Key":"9",
          "Values":[  
-            "cyfre - DZIEWIĘĆ.",
+            "cyfrę - DZIEWIĘĆ.",
             "számot - KILENC."
          ]
       },
