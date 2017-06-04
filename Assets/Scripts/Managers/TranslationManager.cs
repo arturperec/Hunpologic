@@ -70,10 +70,31 @@ public class TranslationManager : MonoBehaviour
     string ReadString()
     {
         //Read the text from directly from the test.txt file
-        StreamReader reader = new StreamReader(path);
-        string result = reader.ReadToEnd();
-        reader.Close();
+
+        string path = Path.Combine(Application.streamingAssetsPath, "translations.txt");
+        string result = "";
+
+        if (File.Exists(path))
+        {
+            FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read);
+            StreamReader sr = new StreamReader(file);
+
+            string str = null;
+            str = sr.ReadToEnd();
+
+            sr.Close();
+            file.Close();
+
+
+            result = str;
+        }
+         Debug.Log(result);
         return result;
+
+        //StreamReader reader = new StreamReader(path);
+        //string result = reader.ReadToEnd();
+        //reader.Close();
+        //return result;
     }
 
     public string GetText(Language lang, string key)

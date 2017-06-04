@@ -1,0 +1,179 @@
+﻿{  
+   "Values":[  
+      {  
+         "Key":"0",
+         "Values":[  
+            "cyfrę - ZERO.",
+            "számot - NULLA."
+         ]
+      },
+      {  
+         "Key":"1",
+         "Values":[  
+            "cyfrę - JEDEN.",
+            "számot - EGY."
+         ]
+      },
+      {  
+         "Key":"2",
+         "Values":[  
+            "cyfrę - DWA.",
+            "számot - KETTŐ."
+         ]
+      },
+      {  
+         "Key":"3",
+         "Values":[  
+            "cyfrę - TRZY.",
+            "számot - HÁROM."
+         ]
+      },
+	  {  
+         "Key":"4",
+         "Values":[  
+            "cyfrę - CZTERY.",
+            "számot - NÉGY."
+         ]
+      },
+	  {  
+         "Key":"5",
+         "Values":[  
+            "cyfrę - PIĘĆ.",
+            "számot - ÖT."
+         ]
+      },
+	  {  
+         "Key":"6",
+         "Values":[  
+            "cyfrę - SZEŚĆ.",
+            "számot - HAT."
+         ]
+      },
+	  {  
+         "Key":"7",
+         "Values":[  
+            "cyfrę - SIEDEM.",
+            "számot - HÉT."
+         ]
+      },
+	  {  
+         "Key":"8",
+         "Values":[  
+            "cyfrę - OSIEM.",
+            "számot - NYOLC."
+         ]
+      },
+	  {  
+         "Key":"9",
+         "Values":[  
+            "cyfrę - DZIEWIĘĆ.",
+            "számot - KILENC."
+         ]
+      },
+	  {  
+         "Key":"10",
+         "Values":[  
+            "zwierze - KRÓLIK.",
+            "állat - NYÚL."
+         ]
+      },
+	  {  
+         "Key":"11",
+         "Values":[  
+            "zwierze - KOT.",
+            "állat - CICA."
+         ]
+      },
+	  {  
+         "Key":"12",
+         "Values":[  
+            "zwierze - KROWA.",
+            "állat - TEHÉN."
+         ]
+      },
+	  {  
+         "Key":"13",
+         "Values":[  
+            "zwierze - PIES.",
+            "állat - KUTYA."
+         ]
+      },
+	  {  
+         "Key":"14",
+         "Values":[  
+            "zwierze - KOŃ.",
+            "állat - LÓ."
+         ]
+      },
+	  {  
+         "Key":"15",
+         "Values":[  
+            "zwierze - MYSZ.",
+            "állat - EGÉR."
+         ]
+      },
+	  {  
+         "Key":"16",
+         "Values":[  
+            "zwierze - ŚWINIA.",
+            "állat - MALAC."
+         ]
+      },
+	  {  
+         "Key":"17",
+         "Values":[  
+            "kolor - NIEBIESKI.",
+            "szín - KÉK."
+         ]
+      },
+	  {  
+         "Key":"18",
+         "Values":[  
+            "kolor - ZIELONY.",
+            "szín - ZÖLD."
+         ]
+      },
+	  {  
+         "Key":"19",
+         "Values":[  
+            "kolor - POMARAŃCZOWY.",
+            "szín - NARANCS."
+         ]
+      },
+	  {  
+         "Key":"20",
+         "Values":[  
+            "kolor - RÓŻOWY.",
+            "szín - RÓZSASZÍN."
+         ]
+      },
+	  {  
+         "Key":"21",
+         "Values":[  
+            "kolor - FIOLETOWY.",
+            "szín - LILA."
+         ]
+      },
+	  {  
+         "Key":"22",
+         "Values":[  
+            "kolor - CZERWONY.",
+            "szín - PIROS."
+         ]
+      },
+	  {  
+         "Key":"23",
+         "Values":[  
+            "kolor - BIAŁY.",
+            "szín - FEHÉR."
+         ]
+      },
+	  {  
+         "Key":"24",
+         "Values":[  
+            "kolor - ŻÓŁTY.",
+            "szín - SÁRGA."
+         ]
+      }
+   ]
+}
