@@ -11,7 +11,7 @@
          "Key":"1",
          "Values":[  
             "cyfrę - JEDEN.",
-            "számot - EGY.,"
+            "számot - EGY."
          ]
       },
       {  
