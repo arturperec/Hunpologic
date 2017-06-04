@@ -41,11 +41,11 @@ public class GameRestartController : MonoBehaviour
 
         if (GameManager.SettingsManager.IsLevelFailed)
         {
-            //todo load gameover scene
+            GameManager.ScenesManager.EndGameLose();
         }
         else if (GameManager.SettingsManager.IsLevelFinished)
         {
-            //todo load congrat scene
+            GameManager.ScenesManager.EndGameWin();
         }
 	}
 

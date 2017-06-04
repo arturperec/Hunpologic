@@ -17,7 +17,9 @@ public class SettingsManager : MonoBehaviour
     public float FillValue;
 
 
-    public string EndSceneName = "scn_EndScene";
-    public string GameSceneName = "scn_Game";
     public string MainMenuSceneName = "scn_MainMenu";
+    public string GameSceneName = "scn_Game";
+    public string EndSceneWin = "scn_EndSceneWin";
+    public string EndSceneLose = "scn_EndSceneLose";
+
 }
