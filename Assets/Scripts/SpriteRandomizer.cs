@@ -11,15 +11,11 @@ public class SpriteRandomizer : MonoBehaviour
 {
     private String _currentCategory;
 
-    private bool _isReady = false;
-
-    void Start ()
+    public void Draw()
     {
         DrawImages(Language.PL, 0, "Wybierz ");
-	    if (_isReady)
-            DrawImages(Language.HU, 4, "Válasszon ");
+        DrawImages(Language.HU, 4, "Válaszd ");
     }
-	
 
     public static void Shuffle<T>(Stack<T> stack)
     {
@@ -32,9 +28,7 @@ public class SpriteRandomizer : MonoBehaviour
 
     void DrawImages(Language language, int pls, String FirstWord)
     {
-        _isReady = false;
-       
-
+      
         int randomNumber = UnityEngine.Random.Range(0, LogicManager.Category.Count);
         _currentCategory = LogicManager.Category.ElementAt(randomNumber);
 	    Stack<Sprite> textures = new Stack<Sprite>();
@@ -76,7 +70,6 @@ public class SpriteRandomizer : MonoBehaviour
 
             button.GetComponent<Image>().sprite = texture;      
        }
-        _isReady = true;
     }
 
 
