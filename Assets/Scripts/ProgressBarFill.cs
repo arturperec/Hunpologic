@@ -26,13 +26,14 @@ public class ProgressBarFill : MonoBehaviour
         _progressBarRectTransform2 = PlayerGraphic2.GetComponent<RectTransform>();
     }
 
-    public void Update()
+    void Update()
     {
-        SetFillAt(GameManager.SettingsManager.FillValue);
+        
         if (pushOrNot)
         {
+            SetFillAt(GameManager.SettingsManager.FillValue);
             Debug.Log("B Pressed");
-            GameManager.SettingsManager.FillValue += 1/GameManager.SettingsManager.MovesToFinishLevel;
+            GameManager.SettingsManager.FillValue += 1f/GameManager.SettingsManager.MovesToFinishLevel;
             Debug.Log("Value: " + GameManager.SettingsManager.FillValue);
             FillBar(GameManager.SettingsManager.FillValue);
             MovePlayer(GameManager.SettingsManager.FillValue);
@@ -40,10 +41,15 @@ public class ProgressBarFill : MonoBehaviour
         }
         //if (GameManager.SettingsManager.FillValue <= 1 && GameManager.SettingsManager.IsLevelFinished == false)
 
-        if (GameManager.SettingsManager.FillValue >= 0)
-            GameManager.SettingsManager.FillValue -= 1 / 100 * Time.deltaTime;
+        if (GameManager.SettingsManager.FillValue >= 0 && GameManager.SettingsManager.FillValue < 1)
+        {
+            //Debug.Log("Value: " + GameManager.SettingsManager.FillValue);
+            GameManager.SettingsManager.FillValue -= 1f / 100f * Time.deltaTime;
+            FillBar(GameManager.SettingsManager.FillValue);
+            //Debug.Log("Value: " + GameManager.SettingsManager.FillValue);
+            MovePlayer(GameManager.SettingsManager.FillValue);
+        }
     }
-
 
     public void MovePlayer(float value)
     {
