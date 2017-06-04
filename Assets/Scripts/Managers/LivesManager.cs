@@ -17,7 +17,6 @@ public class LivesManager : MonoBehaviour
         if (IsGameOver())
         {
             _currentLives--;
-            //GameManager.UIManager.
         }
     }
 
