@@ -12,7 +12,8 @@ public class ProgressBarFill : MonoBehaviour
     public Image PlayerGraphic1;
     public Image PlayerGraphic2;
 
-    public ParticleSystem WinParticles;
+    public ParticleSystem WinParticles1;
+    public ParticleSystem WinParticles2;
 
     private RectTransform _progressBarRectTransform1;
     private RectTransform _progressBarRectTransform2;
@@ -42,10 +43,10 @@ public class ProgressBarFill : MonoBehaviour
     {
         //_progressBarRectTransform.offsetMin = new Vector2(0.0f, _progressBarRectTransform.offsetMin.y);
         //_progressBarRectTransform.offsetMax = new Vector2(-value * _progressBarWidth, _progressBarRectTransform.offsetMax.y);
-        _progressBarRectTransform1.anchorMin = new Vector2(0 + value, _progressBarRectTransform1.anchorMin.y);
-        _progressBarRectTransform1.anchorMax = new Vector2(0.25f + value, _progressBarRectTransform1.anchorMax.y);
-        _progressBarRectTransform2.anchorMin = new Vector2(0.75f - value, _progressBarRectTransform2.anchorMin.y);
-        _progressBarRectTransform2.anchorMax = new Vector2(1.0f - value, _progressBarRectTransform2.anchorMax.y);
+        _progressBarRectTransform1.anchorMin = new Vector2(-0.35f + value, _progressBarRectTransform1.anchorMin.y);
+        _progressBarRectTransform1.anchorMax = new Vector2(0.0f + value, _progressBarRectTransform1.anchorMax.y);
+        _progressBarRectTransform2.anchorMin = new Vector2(1.0f - value, _progressBarRectTransform2.anchorMin.y);
+        _progressBarRectTransform2.anchorMax = new Vector2(1.35f - value, _progressBarRectTransform2.anchorMax.y);
     }
 
     public void FillBar(float value)
@@ -59,7 +60,8 @@ public class ProgressBarFill : MonoBehaviour
 
             if (!GameManager.SettingsManager.IsLevelFinished)
             {
-                WinParticles.Play();
+                WinParticles1.Play();
+                WinParticles2.Play();
                 GameManager.SettingsManager.IsLevelFinished = true;
             }
         }
