@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LivesController : MonoBehaviour {
+public class LivesController : MonoBehaviour
+{
 
-	void Start () {
-		
-	}
-	
-	void Update () {
-		
-	}
+    public GameObject LifeON;
+    public GameObject LifeOFF;
+
+    public void SetValue(bool value)
+    {
+        LifeON.SetActive(value);
+        LifeOFF.SetActive(!value);
+    }
+    
 }
