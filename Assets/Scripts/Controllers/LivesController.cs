@@ -5,13 +5,24 @@ using UnityEngine;
 public class LivesController : MonoBehaviour
 {
 
-    public GameObject LifeON;
-    public GameObject LifeOFF;
+    public GameObject LifeOn;
+    public GameObject LifeOff;
+
+    public ParticleSystem TakieZajebistePartikleJakZleOdpowieszHehe;
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            SetValue(false);
+            TakieZajebistePartikleJakZleOdpowieszHehe.Play();
+        }
+    }
 
     public void SetValue(bool value)
     {
-        LifeON.SetActive(value);
-        LifeOFF.SetActive(!value);
+        LifeOn.SetActive(value);
+        LifeOff.SetActive(!value);
     }
     
 }
