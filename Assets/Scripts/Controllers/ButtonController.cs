@@ -6,6 +6,8 @@ public class ButtonController : MonoBehaviour
 
     public AudioClip CorrectAnswerSound;
     public AudioClip WrongAnswerSound;
+    public LivesController LivesController;
+    
 
     public void SetCorrect(bool hotOrNot)
     {
@@ -26,6 +28,7 @@ public class ButtonController : MonoBehaviour
         else
         {
             Debug.Log("zleeeee");
+            LivesController.WrongAnswer();
             _playable.clip = WrongAnswerSound;
             _playable.Play();
         }

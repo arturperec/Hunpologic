@@ -9,6 +9,8 @@ public class GameRestartController : MonoBehaviour
 
     public SpriteRandomizer SpriteRandomizer;
     public ShortcutController ShortcutController;
+    public ButtonController ButtonController;
+    public LivesController LivesController;
 
 
     void Update () {
@@ -21,6 +23,7 @@ public class GameRestartController : MonoBehaviour
             SpriteRandomizer.Draw();
             SetPlayerOneAnswerState(false);
 	        SetPlayerTwoAnswerState(false);
+           /* LivesController.ResetLives();*/
 	    }
 	}
 

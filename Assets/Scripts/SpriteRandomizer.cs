@@ -13,8 +13,8 @@ public class SpriteRandomizer : MonoBehaviour
 
     public void Draw()
     {
-        DrawImages(Language.PL, 0, "Wybierz ");
-        DrawImages(Language.HU, 4, "Válaszd ");
+        DrawImages(Language.PL, 0, "Wybierz ", "InstructionsPlayer1");
+        DrawImages(Language.HU, 4, "Válaszd ", "InstructionsPlayer2");
     }
 
     public static void Shuffle<T>(Stack<T> stack)
@@ -26,7 +26,7 @@ public class SpriteRandomizer : MonoBehaviour
             stack.Push(value);
     }
 
-    void DrawImages(Language language, int pls, String FirstWord)
+    void DrawImages(Language language, int pls, String FirstWord, String textfield)
     {
       
         int randomNumber = UnityEngine.Random.Range(0, LogicManager.Category.Count);
@@ -61,7 +61,7 @@ public class SpriteRandomizer : MonoBehaviour
 	        {
 	            button.GetComponent<ButtonController>().SetCorrect(true);
                 
-                Debug.Log(FirstWord + TranslationManager.Instance.GetText(language, correctSplitAnswer));
+                GameObject.Find(textfield).GetComponentInChildren<Text>().text = (FirstWord + TranslationManager.Instance.GetText(language, correctSplitAnswer));
 	        }
 	        else
 	        {
