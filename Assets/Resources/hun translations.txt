@@ -1,0 +1,3 @@
+VÁLASZD KI AZ ÁLLATOT.- choose the animal
+VÁLASZD KI A SZÍNT -  choose the colour
+VÁLASZD KI A SZÁMOT - choose the number

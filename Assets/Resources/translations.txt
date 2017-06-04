@@ -158,7 +158,7 @@
          "Key":"22",
          "Values":[  
             "kolor - CZERWONY.",
-            "szín - EGÉR."
+            "szín - PIROS.”
          ]
       },
 	  {  
