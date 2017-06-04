@@ -2,7 +2,8 @@
 
 public class ButtonController : MonoBehaviour
 {
-    private bool _isCorrect = false;
+    [HideInInspector]
+    public bool _isCorrect = false;
 
     public AudioClip CorrectAnswerSound;
     public AudioClip WrongAnswerSound;

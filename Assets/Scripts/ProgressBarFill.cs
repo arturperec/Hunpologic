@@ -18,6 +18,8 @@ public class ProgressBarFill : MonoBehaviour
     private RectTransform _progressBarRectTransform1;
     private RectTransform _progressBarRectTransform2;
 
+    public bool pushOrNot = false;
+
     public void Awake()
     {
         _progressBarRectTransform1 = PlayerGraphic1.GetComponent<RectTransform>();
@@ -27,13 +29,14 @@ public class ProgressBarFill : MonoBehaviour
     public void Update()
     {
         SetFillAt(GameManager.SettingsManager.FillValue);
-        if (Input.GetKeyDown(KeyCode.B))
+        if (pushOrNot)
         {
             Debug.Log("B Pressed");
             GameManager.SettingsManager.FillValue += 1/GameManager.SettingsManager.MovesToFinishLevel;
             Debug.Log("Value: " + GameManager.SettingsManager.FillValue);
             FillBar(GameManager.SettingsManager.FillValue);
             MovePlayer(GameManager.SettingsManager.FillValue);
+            pushOrNot = false;
         }
         //if (GameManager.SettingsManager.FillValue <= 1 && GameManager.SettingsManager.IsLevelFinished == false)
     }
