@@ -14,8 +14,11 @@ public class LivesController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.N))
         {
-            SetValue(false);
-            TakieZajebistePartikleJakZleOdpowieszHehe.Play();
+            if (!GameManager.SettingsManager.IsLevelFinished)
+            {
+                SetValue(false);
+                TakieZajebistePartikleJakZleOdpowieszHehe.Play();
+            }
         }
     }
 
